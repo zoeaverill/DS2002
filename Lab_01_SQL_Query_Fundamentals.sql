@@ -47,7 +47,7 @@ ORDER BY list_price DESC;
 -- 6). Product ID, Name & List Price Costing Between $15 and $20
 -- ------------------------------------------------------------------
 SELECT id AS product_id
-	, product_name
+    , product_name
     , list_price
     FROM northwind.products
     WHERE list_price >= 15.00
@@ -76,7 +76,7 @@ limit 10;
 
 SELECT CASE discontinued 
 			WHEN 1 THEN 'yes'
-            ELSE 'no'
+			ELSE 'no'
 		END AS is_discontinued
 	, COUNT(*) AS product_count
 FROM northwind.products
@@ -88,7 +88,7 @@ GROUP BY discontinued;
 -- ------------------------------------------------------------------
 SELECT product_name
 	, reorder_level AS units_in_stock
-    , target_level AS units_on_order
+  	, target_level AS units_on_order
 FROM northwind.products 
 WHERE reorder_level < target_level;
     
@@ -100,7 +100,7 @@ WHERE reorder_level < target_level;
 -- 11). Products with Supplier Company & Address Info
 -- ------------------------------------------------------------------
 SELECT p.product_name
-	, p.list_price AS product_list_price
+    , p.list_price AS product_list_price
     , p.category AS prodcut_category
     , s.company AS supplier_company
     , s.address AS supplier_address

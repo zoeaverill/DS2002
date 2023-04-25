@@ -1,0 +1,12 @@
+[
+	{
+		"store_key" : 1,
+		"manager_staff_key" : 1,
+		"address_key" : 1
+	},
+	{
+		"store_key" : 2,
+		"manager_staff_key" : 2,
+		"address_key" : 2
+	}
+]
